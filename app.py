@@ -73,7 +73,7 @@ def gallery():
     except Exception as e:
         return jsonify(ok=False, error=str(e)), 500
 
-@app.get("/health")
+@app.get("/api/v1/health")
 def health():
     return jsonify(ok=True, status="healthy"), 200
 
